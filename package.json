@@ -1,0 +1,21 @@
+{
+  "name": "notes-service",
+  "version": "1.0.0",
+  "description": "A production-ready CRUD microservice for managing notes using Node.js, Express, and Redis.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"No tests yet\""
+  },
+  "author": "krishnakumar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "redis": "^4.6.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
