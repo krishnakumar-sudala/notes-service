@@ -27,3 +27,7 @@ resources:
 route:
   enabled: true
   host: ""
+
+serviceAccount:
+  create: false
+  name: ""
