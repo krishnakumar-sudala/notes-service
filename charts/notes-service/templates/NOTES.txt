@@ -1,0 +1,8 @@
+Notes Service deployed successfully!
+
+Endpoints:
+  Internal: http://{{ include "notes-service.fullname" . }}:{{ .Values.service.port }}
+
+If route.enabled=true:
+  External route created. Run:
+    oc get route {{ include "notes-service.fullname" . }}

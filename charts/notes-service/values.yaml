@@ -1,0 +1,29 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/krishnakumar-sudala/notes-service
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 3000
+
+redis:
+  host: "redis-master"
+  port: 6379
+  passwordSecretName: "redis"
+  passwordSecretKey: "redis-password"
+  password: "HN3ajAXaAW"
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+route:
+  enabled: true
+  host: ""
