@@ -10,7 +10,7 @@ service:
   port: 3000
 
 redis:
-  host: "redis-master"
+  host: "redis-master.node-redis-demo.svc.cluster.local"
   port: 6379
   passwordSecretName: "redis"
   passwordSecretKey: "redis-password"
