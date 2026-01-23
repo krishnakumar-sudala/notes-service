@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/krishnakumar-sudala/notes-service/notes-service
-  tag: "bc18a85fef30343af45e7a54002f1cc0c1cefb7e"
+  tag: "8596731a0447389ead870d95f0d3f0a914e816d4"
   pullPolicy: Always
 
 service:
