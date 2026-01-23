@@ -2,8 +2,18 @@ const express = require("express");
 const logger = require("./middleware/logger");
 const errorHandler = require("./middleware/errorHandler");
 const notesRoutes = require("./routes/notes");
+const cors = require("cors");
 
-const app = express();
+const app = express();   // <-- MUST come first
+
+// CORS must be applied after app is created
+app.use(cors({
+  origin: "http://localhost:8082"
+}));
+
+// Handle preflight requests
+app.options("*", cors());
+
 app.use(express.json());
 app.use(logger);
 
